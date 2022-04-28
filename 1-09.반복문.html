@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if(){}
+
+        //반복문 - 조건이 만족하는 동안에 계속해서 {} 코드를 실행 
+
+        //for (조건){
+        //코드
+        //}
+
+        // for(var i = 0; i < 5; i++){
+        //     if(i == 3){
+        //         // break;
+        //         continue;
+        //     }
+
+        //     console.log("The nummber is" + i);
+        // }
+
+
+        // 변수를 바깥에다 선언해도 사용할 수 있다.
+        // var i = 1;
+        // var len = 10;
+        // var total = 0;
+        // for(; i<=10 ;){
+        //     total = total + i;
+        //     i++
+        // }
+
+        // console.log(total);
+
+        var nummbers = [43, 23, 5, 7];
+        // var len = nummbers.length;
+        
+        // for(var i =2; i<len ; i++){
+        //     console.log(numbers[i]);
+        // }
+
+
+        //for - in 보통 숫자가 아닌 키밸류가 있는 경우 씀.  
+        // for (var idx in nummbers){
+        //     console.log(nummbers[i]);
+        // }
+
+
+        //for - of - 값을 가져옴.
+
+        //for - in, for - of는 어디부터 읽을지 조건을 저장하는 것이 아닌, 무조건 전체를 읽음. 중간에 중단하고 싶다면 break를 사용할 것
+
+        for (var num of nummbers){
+            console.log(num);
+        }
+
+        var cars = ["현대", "기아", "볼보"];
+
+        for(var car of cars){
+            console.log(car);
+        }
+
+
+        // numbers.forEach(function(){
+
+        // })
+
+        // var person = {
+        //     firstName : "Jonn",
+        //     lastName : "Doe",
+        //     age : 37
+        // };
+
+        // for(var key in person){
+        //     console.log(person[key]);
+        // }
+
+        // while(조건){}
+        // do - while과 그냥 while의 차이점 : 식을 실행하는 순서. do는 무조건 안에 있는 식을 실행하고 while을 실행항.
+        // var i = 11;
+        // var total = 0;
+        // while(i <= 0){
+        //     total = total + i;
+        //     i++;
+        // }
+
+        // console.log(total);
+
+        //do - while
+        var i = 1;
+        var total= 0;
+        do {
+            total = total + i;
+            i++;
+        }while(i <= 10);
+
+        console.log(total);
+    </script>
+</body>
+</html>
